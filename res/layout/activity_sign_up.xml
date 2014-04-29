@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView
+        android:id="@+id/HeaderSign"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/header_sign" />
+
+    <ImageView
+        android:id="@+id/SigninBox"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_alignLeft="@+id/HeaderSign"
+        android:layout_centerVertical="true"
+        android:src="@drawable/signin_box" />
+
+    <ImageButton
+        android:id="@+id/signupButton"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/HeaderSign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/signup_button"
+        android:background="@null" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signupButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:background="@null" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

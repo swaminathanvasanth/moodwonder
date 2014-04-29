@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView
+        android:id="@+id/HeaderSign"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/header_sign" />
+
+    <ImageView
+        android:id="@+id/SigninBox"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_alignLeft="@+id/HeaderSign"
+        android:layout_centerVertical="true"
+        android:src="@drawable/signin_box" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/signinButton"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/signin_button"
+        android:background="@null" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:background="@null" />
+
+    <ImageButton
+        android:id="@+id/signupButton"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@null"
+        android:src="@drawable/signup_button" />
+
+    <TextView
+        android:id="@+id/Ques_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signupButton"
+        android:layout_alignRight="@+id/password"
+        android:layout_marginBottom="14dp"
+        android:text="@string/noaccount"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

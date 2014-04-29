@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="557dp" >
+
+            <ImageButton
+                android:id="@+id/darkblueBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:src="@drawable/signin_box" />
+
+            <TextView
+                android:id="@+id/base_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/ImageAnswerAll"
+                android:text="@string/how_are_you_feeling"
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/ImageZoomOut"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/image_veryAngry"
+                android:layout_below="@+id/image_veryAngry"
+                android:background="@null"
+                android:src="@drawable/negative_button" />
+
+            <ImageButton
+                android:id="@+id/ImageAnswerAll"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/Image_RatingBar"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:src="@drawable/answer_all_statements_button" />
+
+            <ImageView
+                android:id="@+id/imageGreenBar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/darkblueBackground"
+                android:src="@drawable/bar_green" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/ImageZoomOut"
+                android:layout_below="@+id/imageGreenBar"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <SeekBar
+                            android:id="@+id/seekBarTop1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/imageNumber1"
+                            android:enabled="false"
+                            android:max="50"
+                            android:progressDrawable="@drawable/styled_mycompany_progress" />
+
+                        <TextView
+                            android:id="@+id/myCompany_Top1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3EA055" />
+
+                        <TextView
+                            android:id="@+id/myCompany_Top_rating1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="23dp"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3EA055" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <SeekBar
+                            android:id="@+id/seekBarTop2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/imageNumber1"
+                            android:max="50"
+                            android:progressDrawable="@drawable/styled_mycompany_progress" />
+
+                        <TextView
+                            android:id="@+id/myCompany_Top2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3EA055" />
+
+                        <TextView
+                            android:id="@+id/myCompany_Top_rating2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="23dp"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3EA055" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <SeekBar
+                            android:id="@+id/seekBarTop3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@+id/imageNumber1"
+                            android:max="50"
+                            android:progressDrawable="@drawable/styled_mycompany_progress" />
+
+                        <TextView
+                            android:id="@+id/myCompany_Top3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3EA055" />
+
+                        <TextView
+                            android:id="@+id/myCompany_Top_rating3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="23dp"
+                            android:text="Medium Text"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#3EA055" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/linearLayout1" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/bar_red" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView5"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="Rating"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView4"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_centerHorizontal="true"
+                        android:text="Bottom 3 Areas"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="19dp"
+                        android:text="Area"
+                        android:textColor="#FFFFFF" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/linearLayout1"
+                android:layout_below="@+id/linearLayout2" >
+
+                <TextView
+                    android:id="@+id/myCompany_Bottom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E55451" />
+
+                <TextView
+                    android:id="@+id/myCompany_Bottom_rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E55451" />
+
+                <SeekBar
+                    android:id="@+id/seekBarBone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_mycompany_bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/relativeLayout1"
+                android:layout_below="@+id/relativeLayout1" >
+
+                <TextView
+                    android:id="@+id/myCompany_Bottom2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E55451" />
+
+                <TextView
+                    android:id="@+id/myCompany_Bottom_rating2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E55451" />
+
+                <SeekBar
+                    android:id="@+id/seekBarBtwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_mycompany_bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/relativeLayout4"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/relativeLayout4" >
+
+                <TextView
+                    android:id="@+id/myCompany_Bottom3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E55451" />
+
+                <TextView
+                    android:id="@+id/myCompany_Bottom_rating3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E55451" />
+
+                <SeekBar
+                    android:id="@+id/SeekBarBthree"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_mycompany_bottom" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ImageAnswerAll"
+                android:layout_toRightOf="@+id/ImagemoodAngry"
+                android:text="Top 3 Areas"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_toLeftOf="@+id/Image_RatingBar"
+                android:text="Area"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ImageAnswerAll"
+                android:layout_marginRight="16dp"
+                android:text="Rating"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/Image_RatingBar"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/ImageAnswerAll"
+                android:layout_alignTop="@+id/ImageZoomOut"
+                android:src="@drawable/mood_bar_with_point" />
+
+            <ImageButton
+                android:id="@+id/ImagemoodVeryHappy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/Image_RatingBar"
+                android:layout_alignRight="@+id/textView3"
+                android:background="@null"
+                android:src="@drawable/mood_very_happy" />
+
+            <ImageButton
+                android:id="@+id/Imagemoodhappy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/Image_RatingBar"
+                android:layout_toRightOf="@+id/textView1"
+                android:background="@null"
+                android:src="@drawable/mood_happy" />
+
+            <ImageButton
+                android:id="@+id/image_veryAngry"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/base_question"
+                android:layout_toLeftOf="@+id/ImagemoodAngry"
+                android:background="@null"
+                android:src="@drawable/mood_very_angry" />
+
+            <ImageButton
+                android:id="@+id/ImagemoodAngry"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/base_question"
+                android:layout_below="@+id/base_question"
+                android:background="@null"
+                android:src="@drawable/mood_angry" />
+
+            <ImageButton
+                android:id="@+id/ImagemoodMiddle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/base_question"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:src="@drawable/mood_middle" />
+
+            <ImageButton
+                android:id="@+id/ImageZoomInButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/ImageAnswerAll"
+                android:layout_toRightOf="@+id/Image_RatingBar"
+                android:background="@null"
+                android:src="@drawable/pozitive_button" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

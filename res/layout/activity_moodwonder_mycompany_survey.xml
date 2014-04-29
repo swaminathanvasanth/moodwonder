@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/SurveyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/surveytitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#38ACEC" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/SurveyLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/imageNumber1"
+                        android:layout_width="15dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/left_blue" />
+
+                    <TextView
+                        android:id="@+id/one"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/No_one"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/Q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/QTitle2"
+                        android:text="@string/Q1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/QTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageNumber1"
+                        android:text="@string/QTitle1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#38ACEC" />
+
+                    <TextView
+                        android:id="@+id/seekbarRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/seekBarTop2"
+                        android:text=" "
+                        android:textColor="#38ACEC" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarTop2"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/imageNumber1"
+                        android:max="50"
+                        android:progressDrawable="@drawable/styled_progress" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SurveyLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/left_blue" />
+
+                    <TextView
+                        android:id="@+id/two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/two"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/Q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/QTitle2"
+                        android:text="@string/Q2"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/QTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:text="@string/Q2Title"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#38ACEC" />
+
+                    <TextView
+                        android:id="@+id/seekbarRating2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@+id/seekBarBone"
+                        android:text=" "
+                        android:textColor="#38ACEC" />
+
+                    <SeekBar
+                        android:id="@+id/seekBarBone"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/QTitle2"
+                        android:layout_alignParentBottom="true"
+                        android:max="50"
+                        android:progressDrawable="@drawable/styled_progress" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/three"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q3"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q3Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar3"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar3"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/four"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q4"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q4Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBarBtwo"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBarBtwo"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/five"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q4"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q5Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar5"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar5"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/six"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q6"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q6Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar6"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar6"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/seven"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q7"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q7Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar7"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar7"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/eight"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q8"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q8Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar8"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar8"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/nine"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q9"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q9Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar9"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar9"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ten"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q10"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q10Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar10"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar10"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/eleven"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q11"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q11Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar11"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar11"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/twelve"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q12"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q12Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar12"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar12"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/left_blue" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/thirteen"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/QTitle2"
+                    android:text="@string/Q13"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/QTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/Q13Title"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#38ACEC" />
+
+                <TextView
+                    android:id="@+id/seekbarRating13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/seekBar13"
+                    android:text=" "
+                    android:textColor="#38ACEC" />
+
+                <SeekBar
+                    android:id="@+id/seekBar13"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/QTitle2"
+                    android:layout_alignParentBottom="true"
+                    android:max="50"
+                    android:progressDrawable="@drawable/styled_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SurveyLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageButton
+                    android:id="@+id/submitButton"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/submit_button" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
